@@ -1,0 +1,96 @@
+/* Tabs */ 
+.full-container {
+  margin: 3% 10% 5% 10%;
+}
+
+.tab-title {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(45, 45, 45, 1);
+}
+
+.tab-title h3 {
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  transition: 0.3s ease;
+}
+
+h3:hover{
+  color: rgba(156, 95, 172, 1);
+}
+
+.tab-content {
+  background-color: rgba(45, 45, 45, 1);
+  padding: 50px 40px;
+}
+
+.full-container .tab-content h6 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+.full-container .tab-content .current-tab p {
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 1.9;
+  color: white;
+}
+
+/*hide content display of all tabs when page loads*/
+.tab-content div {
+  display: none;
+}
+
+/*show only content of tab with the additional class 'current-tab', which is dynamically added to the clikcked tab by the user*/
+.tab-content .current-tab {
+  display: block;
+  transition: 0.3s ease;
+}
+.tab-title .current-tab {
+  background-color: rgba(156, 95, 172, 1);
+  color: white;
+  font-weight: 500;
+}
+
+/*Responsive design - tab*/
+@media screen and (max-width: 1024px){
+  h3 {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  }
+  
+  .tab-content h6 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  }
+  
+  .tab-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  }
+}
+
+/*Responsive design - mobile*/
+@media screen and (max-width: 768px){
+
+  .full-container {
+    margin: 5% 2% 15% 2%;
+    background: black;
+  } 
+  
+  .tab-title {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: black;
+  }
+  
+  .tab-content {
+    padding: 20px 10px;
+    background-color: black;
+  }
+}

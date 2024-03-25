@@ -1,0 +1,345 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/* Navigation bar*/
+nav{
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+nav .logo img{
+  width: 250%;
+  cursor: pointer;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav ul li a:hover{
+  color: rgba(156, 95, 172, 1);
+}
+
+nav ul li a.current-link:after{ /*underline of current link*/
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  content: "";
+  background: rgba(156, 95, 172, 1);
+  width: 90%;
+  height: 2px;
+  top: 100%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+nav .menu-btn i{ /*hamburger icon*/
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"]{ /*checkbox to control toogle of menu*/
+  display: none;
+}
+
+/*hero image and text*/
+.hero-image{
+  width: 20rem;
+  height: 20rem;
+}
+
+.hero-image{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.1)),url("../images/hero-image.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  line-height: 8rem;
+}
+
+/* View all button */
+.view-all a{
+  color: white;
+  background-color: rgba(156, 95, 172, 1);
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 600;
+  min-width: 180px;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.6s ease;
+}
+
+.view-all a:hover{
+  color: rgba(156, 95, 172, 1);
+  background-color: white;
+}
+
+/* Popular upcoming parties */
+.popular-parties{
+  color: white;
+  padding-top: 8%;
+  padding-left: 5%;
+}
+
+.popular-parties-title{
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.popular-parties-sub-text{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.view-all-parties{
+  transform: translate(84%,-380%);
+}
+
+.view-all-parties a{
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+/* Popular upcoming parties list */ 
+.image-area{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5%;
+  gap: 7rem;
+}
+
+.image-area img{
+  width: 100%;
+}
+
+.image-area a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: 0.6s ease;
+}
+
+.image-area a:hover{
+  transform: scale(1.05);
+}
+
+.image-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Bollywood quiz */ 
+.bolly-quiz{
+  color: white;
+  text-align: center;
+  padding: 7%;
+}
+
+.bolly-quiz-title{
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.bolly-quiz-sub-text{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.bolly-quiz img{
+  width: 40%;
+}
+
+.bolly-quiz-button a{
+  color: white;
+  background-color: rgba(156, 95, 172, 1);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 20%;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.bolly-quiz-button a:hover{
+  color: rgba(156, 95, 172, 1);
+  background-color: white;
+}
+
+/*Footer*/
+footer{
+  text-align: center;
+  width: 100%;
+  background-color: rgba(29,29,29,1);
+  color: white;
+  padding: 5%;
+  margin-top: 10%;
+}
+
+footer p{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/*Responsive design* - tablet*/
+@media screen and (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+
+/*Responsive design - mobile*/
+@media screen and (max-width: 768px){
+  html{
+    font-size: 60%;
+  }
+
+  nav{
+    padding: 10px 20px;
+  }
+  
+  nav .menu-btn i{
+    display: block;
+  }
+  
+  #click:checked ~ .menu-btn i:before{ /*when checkbox is checked, select the sibling of 'click' with class name 'menu-btn'*/
+    content: "\f00d";      /*css value for cross icon*/
+  }
+  
+  nav ul{
+    position: fixed;
+    z-index: 3;
+    top: 80px;
+    left: -100%;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  #click:checked ~ ul{ /*when checkbox is checked, select the sibling of 'click' with class tag 'ul'*/
+    left: 0;
+  }
+  
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s ease;
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+
+  nav ul li a:hover{
+    color: rgba(156, 95, 172, 1);
+    background: none;
+  }
+  
+  nav ul li a.current-link{
+    color: white;
+    background: rgba(156, 95, 172, 1);
+  }
+
+  nav ul li a.current-link:after{ /*hiding the underline of current link from desktop version*/
+    display: none;
+  }
+  
+  .view-all-parties{
+    transform: translate(0%,90%);
+  }
+  
+  .image-area{
+    margin: 20% 0 20% 0;
+  }
+  
+  image-area img{
+  width: 100%;
+  }  
+
+  .image-description{
+    gap: 0.8rem;
+  }
+
+  .bolly-quiz{
+    margin-bottom: 20%;
+  }
+  
+  .bolly-quiz img{
+  width: 100%;
+  }
+  
+}

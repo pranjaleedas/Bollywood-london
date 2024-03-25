@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/quiz.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <title>Bollywood nights in London</title>
+      
+  </head>
+
+  <body>
+
+     <!-- Navigation bar -->
+     <nav>
+          <a href= "../index.html">
+            <div class= "logo">
+              <img src= "../images/logo.svg" alt="logo">
+            </div>
+          </a>
+
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="explore.html">Explore all</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="guide.html">Clubbing guide</a></li>
+            <li><a class="current-link" href="#">Test your Bollywood</a></li>
+         </ul>
+      </nav>
+
+      <h2>Take the quiz below to find out if you are ready for your next Bolly night...</h2>
+    
+      <!-- Quiz questions -->
+      <div class= "questions">
+        
+            <div id="question">
+              <h3>Q1: Which song does this popular hook step belong to?</h3> <br>
+              <img src= "../images/kala-chashma.gif" alt= "Gif of popular Bollywood hookstep"> <br>
+              <input type= "radio" name= "answer-one" id= "one-one" value= "kala-chashma">
+              <label for= "one-one"> Kala Chashma </label>
+      
+              <input type= "radio" name= "answer-one" id= "one-two" value= "proper-patola">
+              <label for= "one-two"> Proper Patola </label>
+
+              <input type= "radio" name= "answer-one" id= "one-three" value= "balam-pichkari">
+              <label for= "one-three"> Balam Pichkari </label>
+
+            </div>
+    
+            <div id= "question-two">
+              <h3>Q2: What is the name of this character and the movie it is from?</h3> <br><br>
+              <img src= "../images/poo.gif" alt= "Gif of popular Bollywood character"> <br>
+                
+              <input type= "radio" name= "answer-two" id= "two-one" value= "geet">
+              <label for= "two-one""> Geet from Jab We Met </label>
+                
+              <input type= "radio" name= "answer-two" id= "two-two" value= "priya">
+              <label for= "two-two"> Priya from 3 Idiots </label>
+                
+              <input type= "radio" name= "answer-two" id= "two-three" value= "poo">
+              <label for= "two-three"> Poo from K3G </label>
+            </div>
+  
+            <div id= "question-three">
+              <h3>Q3: Which Bollywood movie is this scene from?</h3> <br><br>
+              <img src= "../images/ddlj.gif" alt= "Gif of popular Bollywood scene"> <br>
+                
+              <input type= "radio" name= "answer-three" id= "three-one" value= "ddlj">
+              <label for= "three-one""> Dilwale Dulhaniya Le Jayenge </label>
+                
+              <input type= "radio" name= "answer-three" id= "three-two" value= "kkhh">
+              <label for= "three-two"> Kuch Kuch Hota Hai </label>
+                
+              <input type= "radio" name= "answer-three" id= "three-three" value= "k3g">
+              <label for= "three-three"> Kabhi Khusi Kabhie Gham </label>
+            </div>
+      </div>
+
+    <div class= "buttons">
+      <input type= "submit" id= "submit" name= "submit" value= "Check score">
+      <input type= "submit" id= "reset" name= "clear-answers" value= "Clear answers">
+    </div>
+
+
+    <!-- Quiz results -->
+    <div class= "quiz-results">
+      
+       <div>
+        <img src= "../images/score-zero.gif" alt= "Gif of a woman crying"> <br><br><br><br>
+        <h3>Your score is 0/3.</h3><br>
+        <p>This doesn't look good. Just vibe to the music I guess.</p>
+      </div>
+
+      <div>
+        <img src= "../images/score-one.gif" alt= "Gif of a woman crying"> <br><br><br><br>
+        <h3>Your score is 1/3.</h3><br>
+        <p>We recommend taking your other friends along.</p>
+      </div>
+
+      <div>
+        <img src= "../images/score-two.gif" alt= "Gif of a woman crying"> <br><br><br><br>
+        <h3>Your score is 2/3.</h3><br>
+        <p>Just a few more parties and you will get there.</p>
+      </div>
+        
+      <div>
+        <img src= "../images/score-three.gif" alt= "Gif of a woman crying"> <br><br><br><br>
+        <h3>Your score is 3/3.</h3><br>
+        <p>Make sure to teach your moves to your friends.</p>
+      </div>
+      
+    </div>
+    
+          
+    <!--Script-->
+    <script defer src="../js/quiz.js"></script>
+    
+  </body>
+
+  <!--Footer-->
+  <footer>
+    <p>© 2023 Bollywood Nights London, All Rights Reserved</p> <br><br>
+    <p>The wesbite is the final project submission for the Web Development Module</p><br><br>
+    <p>MSc Human Computer Interaction Design, City University of London</p>
+  </footer>
+
+</html>

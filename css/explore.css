@@ -1,0 +1,139 @@
+*{
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  margin: 2% 3.5%;
+}
+
+/* Search bar */
+.search-bar{
+  color: white;
+  margin-left: 3.5%;
+  font-size: 1.5rem;
+  width: 30%;
+  min-width: 200px;
+  border-radius: 1rem;
+  border: 1px solid rgba(217, 217, 217, 0.5);
+  background-color: rgba(45, 45, 45, 1);
+  border-width: thin;
+  display: block;
+  padding: 1.5rem;
+  background: transparent;
+  background: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+  background-position: 120% 50%;
+}
+
+.search-icon{
+  width: 20px;
+}
+
+/*Party list area*/
+.parties-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 5%;
+}
+
+/*Party information card*/
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(29, 29, 29, 1);
+  border-radius: 1rem;
+  margin-bottom: 4%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.parties-list .card img{
+  width: 100%;
+}
+
+.book-now-link{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(29,29,29,0.8);
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  opacity: 0;
+}
+
+.image-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  color: white;
+  cursor: pointer;
+  margin: 5%;
+}
+
+.image-description h3{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.image-description p{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/*Upon hover*/
+.book-now-link p{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.book-now-link:hover{
+  opacity: 1;
+  border-radius: 1rem;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+/*Hiding cards not matching user's input*/
+.hidden{
+  display: none;
+}
+
+/*Responsive design - mobile*/
+@media screen and (max-width: 768px){
+
+  h2{
+    margin-top: 5%;
+  }
+
+  .search-bar{
+    margin-top: 5%;
+    width: 90%;
+  }
+
+  .parties-list{
+    margin: 20% 5%;
+  }
+
+  .parties-list .card img{
+  width: 100%;
+  }
+}
